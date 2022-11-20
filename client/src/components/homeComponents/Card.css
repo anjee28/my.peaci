@@ -1,0 +1,85 @@
+.cardMainContainer {
+  padding: 8px 56px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.gradeCardTitle h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.selectTrimester {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.selectTrimester select {
+  width: 100%;
+  height: 2.4rem;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 8px;
+  background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+    no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  padding-right: 2rem !important;
+  @apply border-2 border-sky-700 bg-white;
+}
+
+.selectTrimester button {
+  width: 100%;
+  height: 2.4rem;
+  border-radius: 8px;
+  @apply bg-sky-700 text-white;
+}
+
+.gradeCardContainer {
+  overflow: scroll;
+  height: auto;
+  flex: 1;
+}
+
+.gradeCard {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 16px 16px 16px 16px;
+  line-height: normal;
+  @apply drop-shadow-md;
+}
+
+.inc {
+  @apply border-t-8 border-t-orange-400;
+}
+
+.passed {
+  @apply border-t-8 border-t-lime-700;
+}
+
+.failed {
+  @apply border-t-8 border-t-red-700;
+}
+
+.gradeTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.gradeDesc {
+  font-weight: 600;
+}
+
+.gpa {
+  @apply bg-sky-800 px-4 py-2 mt-4 text-white;
+  text-align: center;
+  border-radius: 8px;
+}

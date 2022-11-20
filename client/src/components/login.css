@@ -1,0 +1,55 @@
+.loginParent {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20vh;
+}
+
+.logoDiv {
+  flex-direction: column;
+  display: flex;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoDiv h1 {
+  @apply font-extrabold text-3xl;
+}
+
+.logoImg {
+  width: 30vw;
+}
+
+.loginInput {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  @apply border-sky-500 pt-2;
+}
+
+.loginInput Input {
+  @apply mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  font-size: 0.75rem;
+  background: #334155;
+  height: 3vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer b {
+  padding-left: 0.25rem;
+}

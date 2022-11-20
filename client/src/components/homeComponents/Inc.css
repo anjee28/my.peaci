@@ -1,0 +1,72 @@
+.incMain {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.incTitle {
+  margin: 8px 16px 0px 16px;
+  height: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.legendContainer {
+  margin: 16px 56px 8px 16px;
+  box-sizing: border-box;
+  height: 206px;
+}
+
+.legends {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend {
+  background: white;
+  padding: 0px 16px 4px 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-align: center;
+  @apply drop-shadow-md;
+}
+
+.incContainer {
+  margin: 16px 56px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: auto;
+  overflow: scroll;
+}
+
+.incSubjContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  @apply drop-shadow-md;
+}
+
+.red {
+  @apply border-red-800 border-t-8;
+}
+
+.orange {
+  @apply border-orange-500 border-t-8;
+}
+
+.yellow {
+  @apply border-yellow-500 border-t-8;
+}
+
+.blue {
+  @apply border-sky-500 border-t-8;
+}
+
+.green {
+  @apply border-lime-700 border-t-8;
+}

@@ -1,0 +1,70 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.evaluationTitle {
+  margin: 8px 16px 8px 16px;
+}
+
+.evaluationTitle h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.evaluationContainer {
+  margin: 0px 56px 8px 16px;
+  height: auto;
+  overflow: scroll;
+}
+
+.trimGradeCont {
+  background: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  @apply drop-shadow-md;
+}
+
+.trimester {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subjectsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.subj {
+  display: flex;
+  flex-direction: row;
+  font-weight: normal;
+  gap: 8px;
+  @apply border-t border-slate-600;
+}
+
+.subjName {
+  width: 72px;
+}
+
+.subjDesc {
+  width: auto;
+  flex: 1;
+  word-break: break-word;
+}
+
+.subjGrade {
+  width: 42px;
+}
+
+.tableHead {
+}
+
+.tableHead .subjName,
+.tableHead .subjDesc,
+.tableHead .subjGrade {
+  @apply text-slate-600 font-bold;
+}

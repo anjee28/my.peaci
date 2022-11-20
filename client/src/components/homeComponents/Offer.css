@@ -1,0 +1,32 @@
+.offerTitle {
+  margin: 8px 16px 0px 16px;
+}
+
+.offerTitle h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.subjectsOffered {
+  margin: 16px 56px 8px 16px;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  @apply drop-shadow-md;
+}
+
+.subject:hover {
+  @apply bg-sky-300;
+}
+
+.subjectName,
+.subjectDescription {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

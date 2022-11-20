@@ -1,0 +1,96 @@
+.parent {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+.sidebar {
+  height: 100vh;
+  @apply bg-slate-800;
+  transition: 0.25s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 4px 4px 16px 4px;
+  position: absolute;
+}
+
+.navButton {
+  @apply text-black;
+  width: 100%;
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px 2px 4px;
+}
+
+.navButton p {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.navButton.close {
+  height: 32px;
+  transition: 0.25s;
+}
+
+.navButton.open {
+  height: 92px;
+  transition: 0.25s;
+}
+
+.open .icon {
+  height: 70%;
+}
+
+.close p {
+  display: none;
+}
+
+.active {
+  @apply bg-sky-300;
+}
+
+.active .icon {
+  color: black;
+}
+
+.inactive {
+  @apply bg-slate-600 text-white;
+}
+
+.sidebar.close {
+  width: 2.5rem;
+}
+
+.sidebar.open {
+  width: 6.5rem;
+  transition: 0.25s;
+}
+
+.sidebar .collapse {
+  margin-bottom: 52px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  transform: translateX(2.5rem);
+  overflow: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.logout {
+  margin-top: auto;
+}
